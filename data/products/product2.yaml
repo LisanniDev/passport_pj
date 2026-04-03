@@ -1,0 +1,7 @@
+product:
+  name: "Полное наименование изделия"
+  model: "Модель 2"
+  code: "ТСЦМ.123456.123"
+  execution: "02"
+  version: "V00"
+  OKPD: "OKPD 1"

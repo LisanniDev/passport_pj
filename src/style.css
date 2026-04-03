@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 20mm;
+}
+/* ===== ТИТУЛЬНЫЙ ЛИСТ ===== */
+.title-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.logo {
+    width: 180px;
+    margin-bottom: 40px;
+}
+.subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.meta {
+    margin-top: 40px;
+    font-size: 14px;
+}
+/* ===== ОСНОВНОЙ ТЕКСТ ===== */
+h1 {
+    color: #003366;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
+}
+h2 {
+    color: #003366;
+}
+/* ===== РАЗРЫВ СТРАНИЦЫ ===== */
+.page-break {
+    page-break-after: always;
+}
+/* ===== НУМЕРАЦИЯ ===== */
+@page {
+    margin: 20mm;
+    @bottom-center {
+        content: "Страница " counter(page);
+        font-size: 10px;
+    }
+}
