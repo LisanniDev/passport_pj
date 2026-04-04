@@ -15,7 +15,6 @@ for file in glob.glob("data/products/*.yaml"):
         "--css=src/styles.css",
         "--metadata-file=data/base.yaml",
         "--metadata-file=" + file,
-        "-o", output,
-        "--pdf-engine=xelatex"
+        "-o", output
     ])
     print(f"Собран: {output}")
