@@ -4,7 +4,7 @@ import glob
 for file in glob.glob("data/products/*.yaml"):
     with open(file, encoding="utf-8") as f:
         data = yaml.safe_load(f)
-    code = data["product"]["designation"]
+    code = data["product"]["code"]
     execution = data["product"]["execution"]
     version = data["product"]["version"]
     output = f"build/{code}-{execution}ПС_{version}.pdf"
