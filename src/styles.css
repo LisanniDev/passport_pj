@@ -24,6 +24,13 @@ body {
     margin-top: 40px;
     font-size: 14px;
 }
+/* Футер титульника */
+.title-footer {
+    position: absolute;
+    bottom: 20mm;
+    width: 100%;
+    text-align: center;
+}
 /* ===== ОСНОВНОЙ ТЕКСТ ===== */
 h1 {
     color: #003366;
@@ -39,6 +46,7 @@ h2 {
 }
 /* ===== НУМЕРАЦИЯ ===== */
 @page {
+    size: A4;
     margin: 20mm;
     @bottom-center {
         content: "Страница " counter(page);
